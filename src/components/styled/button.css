@@ -1,11 +1,10 @@
 .btn {
   @apply font-semibold no-underline gap-2;
   border-width: var(--border-btn, 1px);
-  animation: button-pop var(--animation-btn, 0.25s) ease-out;
   text-transform: var(--btn-text-case, uppercase);
   &:active:hover,
   &:active:focus {
-    animation: button-pop 0s ease-out;
+    animation: button-pop var(--animation-btn, 0.25s) ease-out;
     transform: scale(var(--btn-focus-scale, 0.97));
   }
 
